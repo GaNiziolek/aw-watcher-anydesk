@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aw-watcher-anydesk"
+version = "0.1.0"
+description = "ActivityWatch watcher that records AnyDesk sessions from AnyDesk's trace logs"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = []
+classifiers = ["Operating System :: Microsoft :: Windows"]
+
+[project.scripts]
+aw-watcher-anydesk = "aw_watcher_anydesk:main"
+
+[tool.setuptools]
+packages = ["aw_watcher_anydesk"]
